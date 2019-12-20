@@ -8,7 +8,7 @@ envato_sales_csv_file = sys.argv[1]
 # 12.5% envato fee
 envato_fee_ratio = 0.125
 
-# python dictionary to store themeforest item names and their summarize actual earning
+# python dictionary to store themeforest item names and their summarized actual earning
 envato_items = {}
 
 # new workbook to store data from CSV file
@@ -19,7 +19,7 @@ sales_sheet = summarized_workbook.active
 with open( envato_sales_csv_file, 'r' ) as csv_file:
     for row in csv.reader( csv_file ):
         sales_sheet.append( row )
-        # also create an item_name based index using python dictionary data structure
+        # also create an item_name based index using Python dictionary data structure
         item_name = row[3]
         if item_name not in envato_items:
             envato_items[item_name] = 0
