@@ -8,7 +8,7 @@ envato_sales_csv_file = sys.argv[1]
 # 12.5% envato fee
 envato_fee_ratio = 0.125
 
-# python dictionary to stor themeforest item names and their summarize actual earning
+# python dictionary to store themeforest item names and their summarize actual earning
 envato_items = {}
 
 # new workbook to store data from CSV file
